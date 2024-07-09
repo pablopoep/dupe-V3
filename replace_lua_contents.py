@@ -9,4 +9,4 @@ for root, dirs, files in os.walk('.'):
         if file.endswith('.lua'):
             file_path = os.path.join(root, file)
             with open(file_path, 'w') as f:
-                f.write(new_content)
+                f.write(new_content + '\n')
