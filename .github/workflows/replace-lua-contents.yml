@@ -18,10 +18,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install dependencies
+      - name: Install dependencies (if needed)
         run: |
+          # Example: Install pip packages
           python -m pip install --upgrade pip
-          pip install pyyaml  # Example dependency, if needed
+          # Add any additional packages needed by your script
 
       - name: Replace contents of .lua files using Python script
         run: |
